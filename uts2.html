@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+
+a.ex3:hover, a.ex3:active {background: #44749d;}
+    .sidepanel{
+        width: 15%;
+        height: 100%;
+        background-color:#44749d;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        transition: width 1s;
+       
+    }
+    
+    .main{
+        margin-left: 0px;
+        width: 80%;
+        float: left;
+    }
+
+    .kotakkanan{
+        margin-left: 80%;
+        width: 20%;
+        height: 100%;
+    }
+    .kotakbig{
+        margin-left: 0px;
+        width: 80%;
+        margin-top: 5%;
+        margin-left: 6.8%;
+        float: left;
+    }
+    .sidepanelclose{
+        width: 0px;
+        height: 100%;
+        background-color: #44749d;
+        position: fixed;
+        overflow: auto;
+        top: 0px;
+        left: 0px;
+        transition: width 1s;
+    }
+    
+    .mainopen{
+        margin-left: 200px;
+    }
+
+    .close{
+        top: 5%;
+        background-color: #c6d4e1;
+    }
+
+   
+.kotaktop{
+width : 15%;
+height: 150px;
+float: left;
+margin-left: 20px;
+background-color: #c6d4e1;
+}
+
+.kotaktop:hover {
+  background-color: #44749d;
+  
+}
+
+.kotakright{
+width : 60%;
+height: 660px;
+margin-left: 0px;
+background-color: #ebe7e0;
+}
+
+
+.kotakkanan:hover {
+  background-color: #44749d;
+  
+}
+.kotakdown{
+width : 83%;
+height: 560px;
+background-color: #c6d4e1;
+}
+
+.kotakdown:hover {
+  background-color: #44749d;
+  
+}
+
+/* .kotakdown:hover {
+  background-color: #44749d;
+  
+} */
+
+.tombol{
+    width: 5%;
+    float: left;
+}
+</style>
+
+
+
+<body>
+    
+    <div class="sidepanelclose" id="panelkiri">
+        <div class="close">
+            <span style="font-size: 30px;cursor: pointer;" onclick="closeNav()">x</span>
+        </div>
+        
+        <li>Home</li>
+        <li>Profil</li>
+        <li>Contact</li>
+
+    </div>
+
+    <div class="main" id="panelutama">
+    <div class="tombol">
+        <span style="font-size: 30px;cursor: pointer;" onclick="openNav()">&#9776</span>  
+    </div> 
+
+    <div class="kotakatas">
+    <a >
+    <div class="kotaktop"></div>
+    <div class="kotaktop"></div>
+    <div class="kotaktop"></div>
+    <div class="kotaktop"></div>
+    </a>
+    </div>
+    
+    <div class="kotakbig">
+        <div class="kotakdown" ></div>
+        <br>
+        <div class="kotakdown" ></div>
+    </div>
+
+    <div class="kotakkanan">
+        <div class="kotakright"></div>
+        <br>
+        <div class="kotakright"></div>
+    </div>
+</div>
+<script>
+    function openNav(){
+                document.getElementById('panelkiri').className="sidepanel";
+                document.getElementById('panelutama').className="mainopen";
+            }
+    function closeNav(){
+        document.getElementById('panelkiri').className="sidepanelclose";
+        document.getElementById('panelutama').className="main";
+    }
+    </script>
+
+ 
+
+</body>
+</html>
